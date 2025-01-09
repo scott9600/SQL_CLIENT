@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="SQL_CLIENT/App.axaml" value="SQL_CLIENT/SQL_CLIENT.csproj" />
         <entry key="SQL_CLIENT/MainWindow.axaml" value="SQL_CLIENT/SQL_CLIENT.csproj" />
       </map>
     </option>

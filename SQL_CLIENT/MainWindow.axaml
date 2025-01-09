@@ -2,8 +2,45 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
         x:Class="SQL_CLIENT.MainWindow"
-        Title="SQL_CLIENT">
-    Welcome to Avalonia!
+        Title="DBWhat">
+    
+ 
+            <DockPanel>
+                <!-- 메뉴 툴바 -->
+                <Menu DockPanel.Dock="Top">
+                    <MenuItem Header="File" Click="OnFileClick">
+                        <!-- Open 메뉴 항목 -->
+                        <MenuItem Header="Open" Click="OnOpenClick">
+                            <!-- <MenuItem.Icon> -->
+                            <!--     <Image Width="16" Height="16" Source="avares://SQL_CLIENT/Assets/EZIS_logo.png" /> -->
+                            <!-- </MenuItem.Icon> -->
+                        </MenuItem>
+
+                        <!-- Save 메뉴 항목 -->
+                        <MenuItem Header="Save" Click="OnSaveClick"/>
+                        
+                        <!-- Exit 메뉴 항목 -->
+                        <MenuItem Header="Exit" Click="OnExitClick"/>
+                    </MenuItem>
+
+                    <!-- 추가 메뉴 항목 -->
+                    <MenuItem Header="HOW" />
+                    <MenuItem Header="Edit" />
+                    <MenuItem Header="Navigate" />
+                    <MenuItem Header="Search" />
+                    <MenuItem Header="SQL" />
+                    <MenuItem Header="Database" />
+                    <MenuItem Header="Window" />
+                    <MenuItem Header="Help" />
+                </Menu>    
+
+                <!-- 메인 콘텐츠 -->
+                <TextBlock Text="Welcome to Avalonia!" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                           
+            </DockPanel>
+  
+
+    
 </Window>

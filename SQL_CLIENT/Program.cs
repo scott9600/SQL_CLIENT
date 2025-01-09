@@ -1,6 +1,7 @@
 ﻿using Avalonia;
 using System;
 
+
 namespace SQL_CLIENT;
 
 class Program

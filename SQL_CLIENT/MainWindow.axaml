@@ -6,6 +6,18 @@
         x:Class="SQL_CLIENT.MainWindow"
         Title="DBWhat">
     
+    <Window.Styles>
+        <!-- 메뉴 스타일 정의 -->
+        <Style Selector="Menu">
+            <Setter Property="Background" Value="#BBBBBB"/> <!-- 어두운 배경 -->
+            <Setter Property="Foreground" Value="White"/> <!-- 흰색 텍스트 -->
+        </Style>
+        <Style Selector="MenuItem">
+            <Setter Property="BorderBrush" Value="White"/> <!-- 흰색 테두리 -->
+            <Setter Property="BorderThickness" Value="0,0,0,1"/> <!-- 밑줄 효과 -->
+            <Setter Property="Padding" Value="10,5"/> <!-- 적절한 패딩 -->
+        </Style>
+    </Window.Styles>
  
             <DockPanel>
                 <!-- 메뉴 툴바 -->
@@ -13,9 +25,9 @@
                     <MenuItem Header="File" Click="OnFileClick">
                         <!-- Open 메뉴 항목 -->
                         <MenuItem Header="Open" Click="OnOpenClick">
-                            <!-- <MenuItem.Icon> -->
-                            <!--     <Image Width="16" Height="16" Source="avares://SQL_CLIENT/Assets/EZIS_logo.png" /> -->
-                            <!-- </MenuItem.Icon> -->
+                            <MenuItem.Icon>
+                                <Image Width="25" Height="25" Source="avares://SQL_CLIENT/Assets/EZIS_logo.png" />
+                            </MenuItem.Icon>
                         </MenuItem>
 
                         <!-- Save 메뉴 항목 -->
@@ -26,7 +38,6 @@
                     </MenuItem>
 
                     <!-- 추가 메뉴 항목 -->
-                    <MenuItem Header="HOW" />
                     <MenuItem Header="Edit" />
                     <MenuItem Header="Navigate" />
                     <MenuItem Header="Search" />

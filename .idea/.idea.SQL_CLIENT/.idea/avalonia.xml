@@ -5,6 +5,7 @@
       <map>
         <entry key="SQL_CLIENT/App.axaml" value="SQL_CLIENT/SQL_CLIENT.csproj" />
         <entry key="SQL_CLIENT/MainWindow.axaml" value="SQL_CLIENT/SQL_CLIENT.csproj" />
+        <entry key="SQL_CLIENT/Views/NavigatorView.axaml" value="SQL_CLIENT/SQL_CLIENT.csproj" />
       </map>
     </option>
   </component>

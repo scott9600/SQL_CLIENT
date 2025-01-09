@@ -1,0 +1,11 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SQL_CLIENT.Views.NavigatorView"
+        Title="NavigatorView"
+        Width="400" Height="300">
+        <ListBox x:Name="ResultListBox" />
+        <!-- 화면에 띄울 걸 그려놓지 않고 값만 받아올때 사용하는 문법인가? -->
+</Window>

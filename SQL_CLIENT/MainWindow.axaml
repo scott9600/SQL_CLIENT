@@ -3,8 +3,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+        xmlns:local="clr-namespace:SQL_CLIENT"
         x:Class="SQL_CLIENT.MainWindow"
-        Title="DBWhat">
+        Title="EZIS Fabric">
     
     <Window.Styles>
         <!-- 메뉴 스타일 정의 -->
@@ -47,8 +48,19 @@
                     <MenuItem Header="Help" />
                 </Menu>    
 
-                <!-- 메인 콘텐츠 -->
+                
+                
+                <!-- SQL 조회 -->
+                <StackPanel>
+                    <TextBlock Text="Enter Your SQL Query:" />
+                    <TextBox Name="QueryBox" Height="30" />
+                    <!-- SQL 결과-->
+                    <Button Content="Execute" Margin="0,10,0,10" Click="OnExecuteQueryClick" />
+                    <TextBlock Text="Query Result:" />
+                    <ListBox x:Name="QueryResultListBox"/>
+                </StackPanel>
                 <TextBlock Text="Welcome to Avalonia!" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Image Width="200" Height="200" Source="avares://SQL_CLIENT/Assets/EZIS_logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
                            
             </DockPanel>
   
